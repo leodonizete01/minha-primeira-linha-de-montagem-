@@ -5,10 +5,11 @@ on:
     branches: [ main ]
 
 jobs:
-     build-e-teste:
-             runs-on: ubuntu-latest
-        steps:
-      - name: 1. Pegar o chassi do carro (código-fonte)
+  build-e-teste:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 1. Pegar o chassi do carro (codigo-fonte)
         uses: actions/checkout@v3
 
       - name: 2. Estação de Build (Montagem)
